@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/*Printing all possible different combinations of two digits*/
 int main(void)
 {
     int firstDigit;
