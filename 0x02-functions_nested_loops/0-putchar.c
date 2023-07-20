@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #include <stdlio.h>
 /**
  * main - Entry
