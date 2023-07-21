@@ -9,24 +9,29 @@
 
 int _isupper(int c);
 {
-	return (c >= 'A' && c <= 'Z') ? 1 : 0;
+	return (c >= 'A' && c <= 'Z') ? (1) : (0);
 }
 
-int main() 
+int main(void) 
 {
     char ch = 'A';
-    if (_isupper(ch)) {
+
+    if (_isupper(ch)) 
+    {
         _putchar("%c is an uppercase character.\n", ch);
-    } else {
+    }
+    else 
+    {
         _putchar("%c is not an uppercase character.\n", ch);
     }
 
     ch = 'b';
     if (_isupper(ch)) {
         _putchar("%c is an uppercase character.\n", ch);
-    } else {
-        _putchar("%c is not an uppercase character.\n", ch);
     }
-
-    return 0;
+    else 
+    {
+	    _putchar("%c is not an uppercase character.\n", ch);
+    }
+    return (0);
 }
