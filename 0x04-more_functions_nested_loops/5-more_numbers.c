@@ -1,39 +1,22 @@
 #include "main.h"
 
 /**
- * main - entry
- * function that prints 10 times the numbers, from 0 to 14
- * return - always 0
+ * more_numbers - print more numbers
  */
 
-#include <stdio.h>
-
-void _putchar(char c) 
+void more_numbers(void)
 {
-    // Your implementation of _putchar goes here
-    // (This function is used to print a single character)
-    putchar(c);
-}
+	int i, j;
 
-void more_numbers(void) 
-{
-    int i, j;
-    for (j = 0; j < 10; j++) 
-    { 
-        for (i = 0; i <= 14; i++) 
+	for (i = 1; i <= 10; i++)
 	{
-            if (i > 9) 
-	    {
-                _putchar(i / 10 + '0'); 
-            }
-            _putchar(i % 10 + '0'); 
-        }
-        _putchar('\n');
-    }
-}
-
-int main(void) {
-    more_numbers();
-    return (0);
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
+		}
+		_putchar('\n');
+	}
 }
 
